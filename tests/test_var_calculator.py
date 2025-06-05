@@ -67,7 +67,7 @@ class TestVarCalculator(unittest.TestCase):
             calculate_var_portfolio(pnl_matrix, confidence_level=0.95)
     
     def test_var_portfolio_zero_trades(self):
-        pnl_matrix = np.array([[], []])
+        pnl_matrix = [[], []]
         with self.assertRaises(ValueError):
             calculate_var_portfolio(pnl_matrix, confidence_level=0.95)
 
@@ -76,7 +76,7 @@ class TestVarCalculator(unittest.TestCase):
             calculate_var_single([1, 2, 3], confidence_level=1.05)
         
         with self.assertRaises(ValueError):
-            calculate_var_portfolio(np.array([[1, 2], [3, 4]]), confidence_level=0)
+            calculate_var_portfolio([[1, 2], [3, 4]], confidence_level=0)
 
 if __name__ == "__main__":
     unittest.main()
