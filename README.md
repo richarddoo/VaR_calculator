@@ -33,7 +33,11 @@ pip install -r requirements.txt
 - `simple_demo.py` - Basic usage example on a single trade
 - `portfolio_demo.py` - Usage example on a portfolio
 - `user_input_demo.py` - Example prompting the user to provide inputs
-- `diversification_demo` - Example demonstrating the diversification benefit
+- `diversification_demo.py` - Example demonstrating the diversification benefit
+- `dataset_demo.py` - Example demonstrating the use of a dataset with the application
+
+### Data (`data/`)
+- `sample_data.csv` - Data containing historical profit and loss data for multiple trades
 
 ### Project Files
 - `README.md` - Project documentation

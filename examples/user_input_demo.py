@@ -19,7 +19,7 @@ if __name__ == "__main__":
 
     try:
         var = calculate_var_single(pnl_history, confidence_level)
-        print(f"\nValue at Risk (VaR) at {confidence_level*100:.1f}% confidence level: {var}")
+        print(f"\nValue at Risk (VaR) at {confidence_level*100:.1f}% confidence level: ${var:.2f}")
     except Exception as e:
         print(f"Error: {e}")
 
