@@ -16,7 +16,7 @@ A Python application for calculating Value at Risk (VaR) based on historical pro
 ```bash
 # Clone repo
 git clone https://github.com/richarddoo/VaR_calculator.git
-cd var_calculator_project
+cd VaR_calculator
 # Install dependencies
 pip install -r requirements.txt
 ```
@@ -69,3 +69,16 @@ python -m examples.simple_demo
 python -m pytest tests/
 ```
 
+## Troubleshooting Issues
+
+### If getting an error when trying to import numpy or pandas
+Most likely the versions you have of numpy or pandas are incompatible. 
+Uninstall both packages first.
+```bash
+pip uninstall numpy pandas -y
+```
+
+Then re-install the requirements.
+```bash
+pip install -r requirements.txt
+```
