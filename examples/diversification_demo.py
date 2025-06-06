@@ -20,4 +20,4 @@ if __name__ == "__main__":
     sum_vars = var1 + var2
     print(f"Sum of individual VaRs: ${sum_vars:.2f}")
 
-    
+    print(f"\nDiversification benefit: ${sum_vars - port_var_95:.2f}") 
