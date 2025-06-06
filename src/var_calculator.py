@@ -5,7 +5,7 @@ def calculate_var_single(pnl_history, confidence_level=0.95):
     Calculate the historcal VaR for a single trade.
 
     Args:
-        pnl_history (list): Historical profit and loss data (losses as negatives).
+        pnl_history (list or array): Historical profit and loss data (losses as negatives).
         confidence_level (float): Confidence level for VaR calculation (0 < confidence_level < 1).
 
     Returns:
@@ -28,7 +28,7 @@ def calculate_var_portfolio(pnl_matrix, confidence_level=0.95):
     Calculate the historical VaR for a portfolio of trades.
 
     Args:
-        pnl_history (list of lists): Historical profit and loss data for multiple trades, shape (n_trades, n_period).
+        pnl_matrix (list of lists): Historical profit and loss data for multiple trades, shape (n_trades, n_period).
         confidence_level (float): Confidence level for VaR calculation (0 < confidence_level < 1).
 
     Returns:
